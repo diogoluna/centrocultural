@@ -1,0 +1,176 @@
+# RELATORIO DE AUDITORIA DE HOTSPOTS POR PANORAMICA
+
+Total de arquivos na pasta 'obras': 79
+
+## Panoramica: **03** (ID: `node3`)
+- [ERRO] ID: `Point04` | Titulo: "Pedras"
+  * URL: ``
+  * Problema: URL Vazia (nenhuma imagem vinculada)
+- [OK] ID: `Point05` | Titulo: "A luta da onça e do tamanduá " | URL: `obras\21-veado-enrolado.jpg`
+- [OK] ID: `Point06` | Titulo: "A luta da onça e do tamanduá " | URL: `obras\22-a-luta-da-onca-e-do-tamandua.jpg`
+- [OK] ID: `Point07` | Titulo: "Índia escondida por um grande peixe" | URL: `obras\20-india-escondida-por-um-grande-peixe.jpg`
+
+## Panoramica: **04** (ID: `node4`)
+- [ERRO] ID: `ht_info` | Titulo: "Sem Titulo"
+  * URL: ``
+  * Problema: URL Vazia (nenhuma imagem vinculada)
+- [OK] ID: `Point05` | Titulo: "O Beijo" | URL: `obras\01-o-beijo.jpg`
+- [OK] ID: `Point06` | Titulo: "O beijo" | URL: `obras\03-cabeca-brecheret-monumento-as-bandeiras.jpg`
+
+## Panoramica: **05** (ID: `node5`)
+- [OK] ID: `Point04` | Titulo: "Cabeça Brechere" | URL: `obras\03-cabeca-brecheret-monumento-as-bandeiras.jpg`
+- [ERRO] ID: `Point05` | Titulo: "BRECHERET: ARTE E BRASILIDADE"
+  * URL: ``
+  * Problema: URL Vazia (nenhuma imagem vinculada)
+- [ERRO] ID: `Point06` | Titulo: "A ARTE INDÍGENA DE VICTOR BRECHERET"
+  * URL: ``
+  * Problema: URL Vazia (nenhuma imagem vinculada)
+- [OK] ID: `Point07` | Titulo: "Fotos Brecheret" | URL: `obras\68-foto-de-victor-brecheret-4.jpg`
+- [OK] ID: `Point08` | Titulo: "Fotos Brecheret" | URL: `obras\68-foto-de-victor-brecheret.jpg`
+- [OK] ID: `Point09` | Titulo: "Fotos Brecheret" | URL: `obras\68-foto-de-victor-brecheret-3.jpg`
+- [OK] ID: `Point10` | Titulo: "Fotos Brecheret" | URL: `obras\68-fotos-de-victor-brecheret-2.jpg`
+
+## Panoramica: **06** (ID: `node6`)
+- [ERRO] ID: `Point04` | Titulo: "Tocadora de Guitarra"
+  * URL: ``
+  * Problema: URL Vazia (nenhuma imagem vinculada)
+- [OK] ID: `Point05` | Titulo: "Sóror Dolorosa" | URL: `obras\04-soror-dolorosa.jpg`
+- [OK] ID: `Point06` | Titulo: "Ídolo" | URL: `obras\04-soror-dolorosa.jpg`
+- [OK] ID: `Point07` | Titulo: "Tocadora de guitarra" | URL: `obras\07-tocadora-de-guitarra-big.jpg`
+- [OK] ID: `Point08` | Titulo: "Bailarina " | URL: `obras\08-bailarina.jpg`
+- [OK] ID: `Point09` | Titulo: "Adolescente reclinada" | URL: `obras\09-adolescente-reclinada.jpg`
+
+## Panoramica: **07** (ID: `node7`)
+- [OK] ID: `Point05` | Titulo: "Brecheret e seu filho." | URL: `obras\66-fernando-brecheret-com-filho.jpg`
+- [OK] ID: `Point06` | Titulo: "Bailarina " | URL: `obras\08-bailarina.jpg`
+- [ERRO] ID: `Point07` | Titulo: "linha do tempo Brecheret"
+  * URL: `obras\linha do tempo Brecheret_Fiesp_06-05.pdf`
+  * Problema: Contem espaços em branco no link
+  * Problema: Arquivo nao existe na pasta 'obras': `linha do tempo brecheret_fiesp_06-05.pdf`
+
+## Panoramica: **09** (ID: `node9`)
+- [OK] ID: `Point04` | Titulo: "Drama amazônico" | URL: `obras\27-drama-amazonico.jpg`
+- [OK] ID: `Point05` | Titulo: "Filha da Terra Roxa" | URL: `obras\13-filha-da-terra-roxa.jpg`
+- [OK] ID: `Point06` | Titulo: "Três Graças" | URL: `obras\16-tres-gracas.jpg`
+  *(Todos os links e midias desta panoramica estao corretos!)*
+
+## Panoramica: **10** (ID: `node10`)
+- [OK] ID: `Point03` | Titulo: "Virgem Indígena" | URL: `obras\19-virgem-indigena.jpg`
+- [OK] ID: `Point04` | Titulo: "Virgem com Menino" | URL: `obras\18-virgem-com-menino.jpg`
+- [OK] ID: `Point05` | Titulo: "Cabeça indígena " | URL: `obras\17-cabeca-indigena.jpg`
+  *(Todos os links e midias desta panoramica estao corretos!)*
+
+## Panoramica: **11** (ID: `node11`)
+- [ERRO] ID: `Point04` | Titulo: "Texto Vicente do Rego Monteiro:"
+  * URL: ``
+  * Problema: URL Vazia (nenhuma imagem vinculada)
+- [ERRO] ID: `Point05` | Titulo: "Saci"
+  * URL: ``
+  * Problema: URL Vazia (nenhuma imagem vinculada)
+- [OK] ID: `Point06` | Titulo: "Ídolo" | URL: `obras\05-idolo.jpg`
+- [OK] ID: `Point07` | Titulo: "Adolescente Reclinada" | URL: `obras\09-adolescente-reclinada.jpg`
+- [OK] ID: `Point08` | Titulo: "Mani Oca /
+O Nascimento de Mani" | URL: `obras\56-mani-oca-o-nascimento-de-mani.jpg`
+- [OK] ID: `Point09` | Titulo: "Máscaras e Túnicas da Festa de Ihiéboah" | URL: `obras\57-mascaras-e-tunicas-da-festa-de-ihieboah.jpg`
+- [ERRO] ID: `Point10` | Titulo: "Saci"
+  * URL: `obras\10 Saci.png`
+  * Problema: Contem espaços em branco no link
+- [OK] ID: `Point11` | Titulo: "Boizinho " | URL: `obras\30-boizinho.jpg`
+
+## Panoramica: **12** (ID: `node12`)
+- [OK] ID: `Point04` | Titulo: "Mãe índia" | URL: `obras\14-mae-india.jpg`
+- [OK] ID: `Point05` | Titulo: "Mãe índia" | URL: `obras\15-mae-india.jpg`
+- [OK] ID: `Point06` | Titulo: "São Francisco com burrinho " | URL: `obras\11-sao-francisco-com-burrinho.jpg`
+- [OK] ID: `Point07` | Titulo: "Pranchas 39" | URL: `obras\65-colecao-biblioteca-mario-de-andrade-2.jpg`
+- [OK] ID: `Point08` | Titulo: "Prancha 41" | URL: `obras\65-colecao-biblioteca-mario-de-andrade-1.jpg`
+- [OK] ID: `Point09` | Titulo: "Prancha 42" | URL: `obras\65-colecao-biblioteca-mario-de-andrade-3.jpg`
+  *(Todos os links e midias desta panoramica estao corretos!)*
+
+## Panoramica: **13** (ID: `node13`)
+- [OK] ID: `Point04` | Titulo: "Estudo para tema indígena " | URL: `obras\33-estudo-para-dama-marajoara-ii.jpg`
+- [OK] ID: `Point05` | Titulo: "Veado flechado " | URL: `obras\55-veado-flechado.jpg`
+- [OK] ID: `Point06` | Titulo: "Onça e o veado " | URL: `obras\54-onca-e-veado.jpg`
+- [OK] ID: `Point07` | Titulo: "Estudo para “Boi” " | URL: `obras\42-estudo-para-boi.jpg`
+- [OK] ID: `Point08` | Titulo: "Estudo para “Boi e jacaré” " | URL: `obras\36-estudo-para-boi-e-jacare.jpg`
+- [OK] ID: `Point09` | Titulo: "Estudo para “A luta do homem com o boi" | URL: `obras\37-estudo-para-a-luta-do-homem-com-o-boi.jpg`
+  *(Todos os links e midias desta panoramica estao corretos!)*
+
+## Panoramica: **14** (ID: `node14`)
+- [OK] ID: `Point03` | Titulo: "Imagens do livro Flagrantes do Brasil " | URL: `obras/67-jean-manzon-01.jpg`
+- [OK] ID: `Point04` | Titulo: "Imagens do livro Flagrantes do Brasil " | URL: `obras\67-jean-manzon-03.jpg`
+- [OK] ID: `Point05` | Titulo: "Imagens do livro Flagrantes do Brasil " | URL: `obras\67-jean-manzon-02.jpg`
+- [OK] ID: `Point06` | Titulo: "Acalanto de Bartira" | URL: `obras\12-acalanto-de-bartira.jpg`
+- [OK] ID: `Point07` | Titulo: "Barca" | URL: `obras\06-barca.jpg`
+- [OK] ID: `Point08` | Titulo: "Índio e a suassuapara" | URL: `obras\23-o-indio-e-a-suacuapara.jpg`
+- [OK] ID: `Point09` | Titulo: "Índio e a Suassuapara" | URL: `obras\24-o-indio-e-a-suacuapara.jpg`
+- [OK] ID: `Point10` | Titulo: "" | URL: `obras\60-acalanto-de-bartira.jpg`
+  *(Todos os links e midias desta panoramica estao corretos!)*
+
+## Panoramica: **15** (ID: `node15`)
+- [OK] ID: `Point04` | Titulo: "Estudo para “O indígena I”" | URL: `obras\40-estudo-para-o-indigena-i.jpg`
+- [OK] ID: `Point05` | Titulo: "Estudo para “O índio I”" | URL: `obras\43-estudo-para-indigena-i.jpg`
+- [OK] ID: `Point06` | Titulo: "Estudo para “O indígena”" | URL: `obras\49-estudo-para-o-indigena.jpg`
+- [OK] ID: `Point07` | Titulo: "Estudo para
+“O índio e o cavalo” 
+" | URL: `obras\48-estudo-para-o-indio-e-o-cavalo.jpg`
+- [OK] ID: `Point08` | Titulo: "Estudo para tema indígena " | URL: `obras\32-estudo-para-tema-indigena.jpg`
+- [OK] ID: `Point09` | Titulo: "Estudo para tema indígena " | URL: `obras\51-estudo-tema-indigena.jpg`
+- [OK] ID: `Point10` | Titulo: "Estudo para tema indígena " | URL: `obras\50-estudo-tema-indigena.jpg`
+  *(Todos os links e midias desta panoramica estao corretos!)*
+
+## Panoramica: **16** (ID: `node16`)
+- [OK] ID: `Point04` | Titulo: "Acalanto de Bartira" | URL: `obras\12-acalanto-de-bartira.jpg`
+- [ERRO] ID: `Point05` | Titulo: "Zebu"
+  * URL: `obras\29-zebu.jpg"`
+  * Problema: Contem aspas duplas no link (ex: `"` no final)
+
+## Panoramica: **17** (ID: `node17`)
+- [ERRO] ID: `Point03` | Titulo: "Luta de índios Kalapalo na coleção do MAC/USP"
+  * URL: ``
+  * Problema: URL Vazia (nenhuma imagem vinculada)
+- [ERRO] ID: `Point04` | Titulo: "Sem Titulo"
+  * URL: `obras\61 Luta dos Indígenas Kalapalo 03.jpg`
+  * Problema: Contem espaços em branco no link
+  * Problema: Arquivo nao existe na pasta 'obras': `61 luta dos indígenas kalapalo 03.jpg`
+- [ERRO] ID: `Point05` | Titulo: "Sem Titulo"
+  * URL: `obras\61 Luta dos Indígenas Kalapalo 02.jpg`
+  * Problema: Contem espaços em branco no link
+  * Problema: Arquivo nao existe na pasta 'obras': `61 luta dos indígenas kalapalo 02.jpg`
+- [ERRO] ID: `Point06` | Titulo: "Sem Titulo"
+  * URL: `obras\61 Luta dos Indígenas Kalapalo 01.jpg`
+  * Problema: Contem espaços em branco no link
+  * Problema: Arquivo nao existe na pasta 'obras': `61 luta dos indígenas kalapalo 01.jpg`
+- [OK] ID: `Point07` | Titulo: "Luta dos indígenas Kalapalo " | URL: `obras\61-Luta-dos-indigenas-Kalapalo.jpg`
+- [OK] ID: `Point08` | Titulo: "Luta de índios Kalapalo " | URL: `obras\31-luta-de-indios-kalapalo.jpg`
+- [OK] ID: `Point09` | Titulo: "Drama marajoara " | URL: `obras\26-drama-marajoara.jpg`
+
+## Panoramica: **18** (ID: `node18`)
+- [OK] ID: `Point04` | Titulo: "Três Cavalos e Indigina" | URL: `obras\34-indigenas-e-cavalos.jpg`
+- [OK] ID: `Point05` | Titulo: "Estudo para “Drama marajoara” " | URL: `obras\53-estudo-para-drama-marajoara.jpg`
+- [OK] ID: `Point06` | Titulo: "Estudo para “Drama marajoara II”" | URL: `obras\33-estudo-para-dama-marajoara-ii.jpg`
+- [OK] ID: `Point07` | Titulo: "Estudo para tema indígena " | URL: `obras\52-estudo-tema-indigena.jpg`
+- [OK] ID: `Point08` | Titulo: "Estudo para “Indígena e o cavalo” " | URL: `obras\47-estudo-para-indigena-e-o-cavalo.jpg`
+- [OK] ID: `Point09` | Titulo: "Três cavalos e indígena" | URL: `obras\38-tres-cavalos-e-indigena.jpg`
+  *(Todos os links e midias desta panoramica estao corretos!)*
+
+## Panoramica: **19** (ID: `node19`)
+- [OK] ID: `Point03` | Titulo: "Luta do índio e onça " | URL: `obras\39-luta-do-indio-e-onca.jpg`
+- [OK] ID: `Point04` | Titulo: "Estudo  para “Luta das onças” " | URL: `obras\45-estudo-indio-e-oncas.jpg`
+- [OK] ID: `Point05` | Titulo: "Estudo  para “Luta das onças” " | URL: `obras\46-estudo-luta-das-oncas.jpg`
+- [OK] ID: `Point06` | Titulo: "Estudo para “Índio e onça” " | URL: `obras\41-estudo-para-indio-e-onca.jpg`
+- [OK] ID: `Point07` | Titulo: "A luta do índio com a onça " | URL: `obras\44-A-Luta-do-índio-com-a-onça.png`
+  *(Todos os links e midias desta panoramica estao corretos!)*
+
+## Panoramica: **20** (ID: `node20`)
+- [OK] ID: `Point03` | Titulo: "Piroga" | URL: `obras\28-piroga.jpg`
+  *(Todos os links e midias desta panoramica estao corretos!)*
+
+## Panoramica: **21** (ID: `node21`)
+- [ERRO] ID: `Point03` | Titulo: "Onça"
+  * URL: `obras\02 Onça.jpg`
+  * Problema: Contem espaços em branco no link
+  * Problema: Arquivo nao existe na pasta 'obras': `02 onça.jpg`
+- [ERRO] ID: `Point04` | Titulo: "Zebu"
+  * URL: ``
+  * Problema: URL Vazia (nenhuma imagem vinculada)
+

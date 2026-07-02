@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 8.0.1/22530
 // Filename: FIESPSKIN.ggsk
-// Generated 2026-07-01T15:31:37Z
+// Generated 2026-07-02T18:12:59Z
 
 function pano2vrSkin(player,base) {
 	var me=this;
@@ -762,12 +762,12 @@ function pano2vrSkin(player,base) {
 		hs+='z-index: 1;';
 		hs+='background : rgba(0,0,0,0.843137);';
 		hs+='border : 0px solid #000000;';
-		hs+='bottom : 88px;';
-		hs+='height : 234px;';
+		hs+='bottom : 87px;';
+		hs+='height : 277px;';
 		hs+='position : absolute;';
 		hs+='right : 20px;';
 		hs+='visibility : hidden;';
-		hs+='width : 400px;';
+		hs+='width : 317px;';
 		hs+='pointer-events:auto;';
 		hs+='backdrop-filter: blur(8px)';
 		el.setAttribute('style',hs);
@@ -863,7 +863,7 @@ function pano2vrSkin(player,base) {
 		hs+='position : absolute;';
 		hs+='top : 96px;';
 		hs+='visibility : inherit;';
-		hs+='width : 397px;';
+		hs+='width : 288px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';

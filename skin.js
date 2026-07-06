@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 8.0.1/22530
-// Filename: FIESPSKIN.ggsk
-// Generated 2026-07-02T18:12:59Z
+// Filename: 
+// Generated 2026-07-03T00:51:23Z
 
 function pano2vrSkin(player,base) {
 	var me=this;
@@ -1166,6 +1166,505 @@ function pano2vrSkin(player,base) {
 		}
 		me.divSkin.appendChild(me._titulopano);
 	};
+	function SkinHotspotClass_ht_click__3d(parentScope,hotspot) {
+		var me=this;
+		var flag=false;
+		var hs='';
+		me.parentScope=parentScope;
+		me.hotspot=hotspot;
+		var nodeId=String(hotspot.url);
+		nodeId=(nodeId.charAt(0)=='{')?nodeId.substr(1, nodeId.length - 2):''; // }
+		me.ggUserdata=skin.player.getNodeUserdata(nodeId);
+		me.ggUserdata.nodeId=nodeId;
+		me.ggNodeId=nodeId;
+		me.elementMouseDown={};
+		me.elementMouseOver={};
+		me.findElements=function(id,regex) {
+			return skin.findElements(id,regex);
+		}
+		el = new THREE.Group();
+		el.userData.setOpacityInternal = function(v) {
+			me._ht_click.visible = (v>0 && me._ht_click.userData.visible);
+		}
+		el.userData.width = 0;
+		el.userData.height = 0;
+		el.name = 'ht_click';
+		el.userData.x = -5.42;
+		el.userData.y = 4.39;
+		el.translateZ(0.000);
+		el.userData.zIndex = -10000;
+		el.userData.zIndexCurrent = -10000;
+		el.userData.z = 0.000;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.mouseOverTouchMode = 'sticky';
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.renderOrder = 0;
+		el.userData.renderOrder = 0;
+		el.userData.isVisible = function() {
+			let vis = me._ht_click.visible
+			let parentEl = me._ht_click.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._ht_click.userData.opacity = v;
+			v = v * me._ht_click.userData.parentOpacity;
+			if (me._ht_click.userData.setOpacityInternal) me._ht_click.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_click.children.length; i++) {
+				let child = me._ht_click.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._ht_click.userData.parentOpacity = v;
+			v = v * me._ht_click.userData.opacity
+			if (me._ht_click.userData.setOpacityInternal) me._ht_click.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_click.children.length; i++) {
+				let child = me._ht_click.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.permeable = false;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._ht_click = el;
+		el.userData.ggId="ht_click";
+		me._ht_click.userData.ggIsActive=function() {
+			return player.getCurrentNode()==this.ggElementNodeId();
+		}
+		el.userData.ggElementNodeId=function() {
+			if (me.hotspot.url!='' && me.hotspot.url.charAt(0)=='{') { // }
+				return me.hotspot.url.substr(1, me.hotspot.url.length - 2);
+			} else {
+				if ((this.parentNode) && (this.parentNode.userData.ggElementNodeId)) {
+					return this.parentNode.userData.ggElementNodeId();
+				} else {
+					return player.getCurrentNode();
+				}
+			}
+		}
+		me._ht_click.userData.onclick=function (e) {
+			player.triggerEvent('hsproxyclick', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_click.userData.ondblclick=function (e) {
+			player.triggerEvent('hsproxydblclick', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_click.userData.onmouseenter=function (e) {
+			player.setActiveHotspot(me.hotspot);
+			me.elementMouseOver['ht_click']=true;
+			player.triggerEvent('hsproxyover', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_click.userData.onmouseleave=function (e) {
+			me.elementMouseOver['ht_click']=false;
+			player.triggerEvent('hsproxyout', {'id': me.hotspot.id, 'url': me.hotspot.url});
+			player.setActiveHotspot(null);
+		}
+		me._ht_click.userData.ggUpdatePosition=function (useTransition) {
+		}
+		el = new THREE.Mesh();
+			material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : (player.get3dModelType() != 2 || false) } ); 
+			el.userData.transparentIn3d = material.transparent;
+			material.name = '_material';
+			el.material = material;
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 100;
+		el.userData.height = 20;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.userData.borderRadius = {};
+		el.userData.borderRadiusInnerShape = {};
+		el.userData.borderRadius.topLeft = el.userData.borderRadiusInnerShape.topLeft = 0;
+		el.userData.borderRadius.topRight = el.userData.borderRadiusInnerShape.topRight = 0;
+		el.userData.borderRadius.bottomRight = el.userData.borderRadiusInnerShape.bottomRight = 0;
+		el.userData.borderRadius.bottomLeft = el.userData.borderRadiusInnerShape.bottomLeft = 0;
+		el.name = '';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.translateZ(0.030);
+		el.userData.zIndex = -10000;
+		el.userData.zIndexCurrent = -10000;
+		el.userData.z = 0.030;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.mouseOverTouchMode = 'sticky';
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.renderOrder = 1;
+		el.userData.renderOrder = 1;
+		el.userData.isVisible = function() {
+			let vis = me.__.visible
+			let parentEl = me.__.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me.__.userData.opacity = v;
+			v = v * me.__.userData.parentOpacity;
+			if (me.__.userData.setOpacityInternal) me.__.userData.setOpacityInternal(v);
+			for (let i = 0; i < me.__.children.length; i++) {
+				let child = me.__.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me.__.userData.parentOpacity = v;
+			v = v * me.__.userData.opacity
+			if (me.__.userData.setOpacityInternal) me.__.userData.setOpacityInternal(v);
+			for (let i = 0; i < me.__.children.length; i++) {
+				let child = me.__.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.permeable = false;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me.__ = el;
+		el.userData.borderWidth = {};
+		el.userData.borderWidth.default = {};
+		el.userData.borderWidth.default.top = 0;
+		el.userData.borderWidth.default.right = 0;
+		el.userData.borderWidth.default.bottom = 0;
+		el.userData.borderWidth.default.left = 0;
+		el.userData.borderRadius = {};
+		el.userData.borderRadius.default = {};
+		el.userData.borderRadius.default.topLeft = 0;
+		el.userData.borderRadius.default.topRight = 0;
+		el.userData.borderRadius.default.bottomRight = 0;
+		el.userData.borderRadius.default.bottomLeft = 0;
+		el.userData.borderRadiusInnerShape = {};
+		el.userData.createGeometry = function(bwTop, bwRight, bwBottom, bwLeft, brTopLeft, brTopRight, brBottomRight, brBottomLeft) {
+			let el = me.__;
+			skin.disposeGeometryAndMaterial(el);
+			skin.removeChildren(el, 'subElement');
+			if (typeof(bwTop) != 'undefined') {
+				el.userData.borderWidth.top = bwTop;
+				el.userData.borderWidth.right = bwRight;
+				el.userData.borderWidth.bottom = bwBottom;
+				el.userData.borderWidth.left = bwLeft;
+				el.userData.borderRadius.topLeft = brTopLeft;
+				el.userData.borderRadius.topRight = brTopRight;
+				el.userData.borderRadius.bottomRight = brBottomRight;
+				el.userData.borderRadius.bottomLeft = brBottomLeft;
+			}
+			let width = el.userData.width / 100.0;
+			let height = el.userData.height / 100.0;
+			skin.rectCalcBorderRadiiInnerShape(me.__);
+			if (skin.rectHasRoundedCorners(me.__)) {
+		roundedRectShape = new THREE.Shape();
+		let borderRadiusTL = me.__.userData.borderRadiusInnerShape.topLeft / 100.0;
+		let borderRadiusTR = me.__.userData.borderRadiusInnerShape.topRight / 100.0;
+		let borderRadiusBR = me.__.userData.borderRadiusInnerShape.bottomRight / 100.0;
+		let borderRadiusBL = me.__.userData.borderRadiusInnerShape.bottomLeft / 100.0;
+		roundedRectShape.moveTo((-width / 2.0) + borderRadiusTL, (height / 2.0));
+		roundedRectShape.lineTo((width / 2.0) - borderRadiusTR, (height / 2.0));
+		if (borderRadiusTR > 0.0) {
+		roundedRectShape.arc(0, -borderRadiusTR, borderRadiusTR, Math.PI / 2.0, 2.0 * Math.PI, true);
+		}
+		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + borderRadiusBR);
+		if (borderRadiusBR > 0.0) {
+		roundedRectShape.arc(-borderRadiusBR, 0, borderRadiusBR, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
+		}
+		roundedRectShape.lineTo((-width / 2.0) + borderRadiusBL, (-height / 2.0));
+		if (borderRadiusBL > 0.0) {
+		roundedRectShape.arc(0, borderRadiusBL, borderRadiusBL, 3.0 * Math.PI / 2.0, Math.PI, true);
+		}
+		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - borderRadiusTL);
+		if (borderRadiusTL > 0.0) {
+		roundedRectShape.arc(borderRadiusTL, 0, borderRadiusTL, Math.PI, Math.PI / 2.0, true);
+		}
+		geometry = new THREE.ShapeGeometry(roundedRectShape);
+		geometry.name = '_geometry';
+		geometry.computeBoundingBox();
+		var min = geometry.boundingBox.min;
+		var max = geometry.boundingBox.max;
+		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
+		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
+		var vertexPositions = geometry.getAttribute('position');
+		var vertexUVs = geometry.getAttribute('uv');
+		for (var i = 0; i < vertexPositions.count; i++) {
+			var v1 = vertexPositions.getX(i);
+			var	v2 = vertexPositions.getY(i);
+			vertexUVs.setX(i, (v1 + offset.x) / range.x);
+			vertexUVs.setY(i, (v2 + offset.y) / range.y);
+		}
+		geometry.uvsNeedUpdate = true;
+			} else {
+				geometry = new THREE.PlaneGeometry(el.userData.width / 100.0, el.userData.height / 100.0, 5, 5);
+				geometry.name = '_geometry';
+			}
+			el.geometry = geometry;
+		}
+		me.__.userData.backgroundColorAlpha = 1;
+		me.__.userData.borderColorAlpha = 1;
+		me.__.userData.setOpacityInternal = function(v) {
+			me.__.material.opacity = v;
+			if (me.__.userData.hasScrollbar) {
+				me.__.userData.scrollbar.material.opacity = v;
+				me.__.userData.scrollbarBg.material.opacity = v;
+			}
+			if (me.__.userData.ggSubElement) {
+				me.__.userData.ggSubElement.material.opacity = v
+				me.__.userData.ggSubElement.visible = (v>0 && me.__.userData.visible);
+			}
+			me.__.visible = (v>0 && me.__.userData.visible);
+		}
+		me.__.userData.setBackgroundColor = function(v) {
+			me.__.material.color = v;
+		}
+		me.__.userData.setBackgroundColorAlpha = function(v) {
+			me.__.userData.backgroundColorAlpha = v;
+			me.__.userData.setOpacity(me.__.userData.opacity);
+		}
+		el.userData.createGeometry(0, 0, 0, 0, 0, 0, 0, 0);
+		el.userData.backgroundColor = player.getTHREESkinColor('#ffffff');
+		el.userData.textColor = '#000000';
+		el.userData.textColorAlpha = 1;
+		var canvas = document.createElement('canvas');
+		canvas.width = 200;
+		canvas.height = 40;
+		el.userData.textCanvas = canvas;
+		el.userData.textCanvasContext = canvas.getContext('2d');
+		var tmpCanvas = document.createElement('canvas');
+		el.userData.tmpCanvas = tmpCanvas;
+		el.userData.tmpCanvasContext = tmpCanvas.getContext('2d');
+		el.userData.ggTextureFromCanvas = function() {
+			var el = me.__;
+			var canv = me.__.userData.textCanvas;
+			var ctx = me.__.userData.textCanvasContext;
+			var tmpCanv = me.__.userData.tmpCanvas;
+			ctx.clearRect(0, 0, canv.width, canv.height);
+			if (tmpCanv.width > 0 && tmpCanv.height > 0) {
+				ctx.drawImage(tmpCanv, 0, ( me.__.userData.scrollPosPercent ? tmpCanv.height * me.__.userData.scrollPosPercent : 0), canv.width, canv.height, 0, 0, canv.width, canv.height);
+			}
+		width = me.__.userData.boxWidthCanv / 100.0;
+		height = me.__.userData.boxHeightCanv / 100.0;
+		me.__.userData.width = me.__.userData.boxWidthCanv;
+		me.__.userData.height = me.__.userData.boxHeightCanv;
+		me.__.userData.createGeometry();
+		var newPos = skin.getElementVrPosition(me.__, 0, 0);
+		me.__.position.x = newPos.x;
+		me.__.position.y = newPos.y;
+			var textTexture = new THREE.CanvasTexture(canv);
+			textTexture.name = '_texture';
+			textTexture.minFilter = THREE.LinearFilter;
+			textTexture.colorSpace = THREE.LinearSRGBColorSpace;
+			textTexture.wrapS = THREE.ClampToEdgeWrapping;
+			textTexture.wrapT = THREE.ClampToEdgeWrapping;
+			if (me.__.material.map) {
+				me.__.material.map.dispose();
+			}
+			me.__.material.map = textTexture;
+			me.__.material.needsUpdate = true;
+			player.repaint();
+		}
+		el.userData.ggRenderText = function() {
+			skin.removeChildren(me.__, 'scrollbar');
+			skin.paintTextDivToCanvas(me.__, 'box-sizing: border-box; width: auto; height: auto; font-size: 5px; font-weight: inherit; color: #000000; text-align: center; white-space: pre; padding: 0px; overflow: hidden;' + '; color: ' + me.__.userData.textColor + ' !important;', false, true, false);
+			me.__.userData.hasScrollbar = false;
+		}
+		el.userData.ggUpdateText=function(force) {
+			var params = [];
+			var hs = player._("Clique acima para assitir.", params);
+			if (hs!=this.ggText || force) {
+				this.ggText=hs;
+				this.ggRenderText();
+			}
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me.__.userData.backgroundColor = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me.__.userData.backgroundColorAlpha = v;
+		}
+		el.userData.setTextColor = function(v) {
+			me.__.userData.textColor = '#' + v.getHexString();
+		}
+		el.userData.setTextColorAlpha = function(v) {
+			me.__.userData.textColorAlpha = v;
+		}
+		el.userData.ggId="";
+		me.__.userData.ggIsActive=function() {
+			if ((this.parent) && (this.parent.ggIsActive)) {
+				return this.parent.ggIsActive();
+			}
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			return me.ggNodeId;
+		}
+		me.__.userData.ggUpdatePosition=function (useTransition) {
+				me.__.userData.ggUpdateText(true);
+		}
+		me._ht_click.add(me.__);
+		me._ht_click.userData.setOpacity(1.00);
+		me.elementMouseOver['ht_click']=false;
+		me.__.userData.setOpacity(1.00);
+			me.__.userData.ggUpdateText(true);
+			me.__obj = me._ht_click;
+	me.__obj.userData.ggUse3d=true;
+	me.__obj.userData.gg3dDistance=500;
+			me.__obj.userData.hotspot = hotspot;
+			me.__obj.userData.fromSkin = true;
+	};
+	function SkinHotspotClass_ht_click(parentScope,hotspot) {
+		var me=this;
+		var flag=false;
+		var hs='';
+		me.parentScope=parentScope;
+		me.hotspot=hotspot;
+		var nodeId=String(hotspot.url);
+		nodeId=(nodeId.charAt(0)=='{')?nodeId.substr(1, nodeId.length - 2):''; // }
+		me.ggNodeId=nodeId;
+		me.ggUserdata=skin.player.getNodeUserdata(nodeId);
+		me.elementMouseDown={};
+		me.elementMouseOver={};
+		me.findElements=function(id,regex) {
+			return skin.findElements(id,regex);
+		}
+		el=me._ht_click=document.createElement('div');
+		el.ggId="ht_click";
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_hotspot ";
+		el.ggType='hotspot';
+		el.userData=el;
+		hs ='';
+		hs+='height : 0px;';
+		hs+='left : 418px;';
+		hs+='position : absolute;';
+		hs+='top : 101px;';
+		hs+='visibility : inherit;';
+		hs+='width : 0px;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style.transformOrigin='50% 50%';
+		me._ht_click.ggIsActive=function() {
+			return player.getCurrentNode()==this.ggElementNodeId();
+		}
+		el.ggElementNodeId=function() {
+			if (me.hotspot.url!='' && me.hotspot.url.charAt(0)=='{') { // }
+				return me.hotspot.url.substr(1, me.hotspot.url.length - 2);
+			} else {
+				if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+					return this.parentNode.ggElementNodeId();
+				} else {
+					return player.getCurrentNode();
+				}
+			}
+		}
+		me._ht_click.onclick=function (e) {
+			player.triggerEvent('hsproxyclick', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_click.ondblclick=function (e) {
+			player.triggerEvent('hsproxydblclick', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_click.onmouseenter=function (e) {
+			player.setActiveHotspot(me.hotspot);
+			me.elementMouseOver['ht_click']=true;
+			player.triggerEvent('hsproxyover', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_click.onmouseleave=function (e) {
+			me.elementMouseOver['ht_click']=false;
+			player.triggerEvent('hsproxyout', {'id': me.hotspot.id, 'url': me.hotspot.url});
+			player.setActiveHotspot(null);
+		}
+		me._ht_click.ggUpdatePosition=function (useTransition) {
+		}
+		el=me.__=document.createElement('div');
+		els=me.____text=document.createElement('div');
+		el.className='ggskin ggskin_textdiv';
+		el.ggTextDiv=els;
+		el.ggId="";
+		el.ggDx=0;
+		el.ggDy=0;
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'translate(-50%, -50%) ' };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_text ";
+		el.ggType='text';
+		el.userData=el;
+		hs ='';
+		hs+='color : #000000;';
+		hs+='height : auto;';
+		hs+='left : calc(50% - ((0px + 0px) / 2) + 0px);';
+		hs+='position : absolute;';
+		hs+='top : calc(50% - ((0px + 0px) / 2) + 0px);';
+		hs+='transform : translate(-50%, -50%);;';
+		hs+='visibility : inherit;';
+		hs+='width : auto;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style.transformOrigin='50% 50%';
+		hs='';
+		hs+='border : 0px solid #000000;';
+		hs+='box-sizing: border-box;';
+		hs+='width: auto;';
+		hs+='height: auto;';
+		hs+='font-size: 5px;';
+		hs+='font-weight: inherit;';
+		hs+='text-align: center;';
+		hs+='white-space: pre;';
+		hs+='padding: 0px;';
+		hs+='overflow: hidden;';
+		els.setAttribute('style',hs);
+		me.__.ggUpdateText=function() {
+			var params = [];
+			var hs = player._("Clique acima para assitir.", params);
+			if (hs!=this.ggText) {
+				this.ggText=hs;
+				this.ggTextDiv.innerHTML=hs;
+				if (this.ggUpdatePosition) this.ggUpdatePosition();
+			}
+		}
+		me.__.ggUpdateText();
+		el.appendChild(els);
+		me.__.ggIsActive=function() {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			return me.ggNodeId;
+		}
+		me.__.ggUpdatePosition=function (useTransition) {
+		}
+		me._ht_click.appendChild(me.__);
+		me.elementMouseOver['ht_click']=false;
+		me.ggUse3d=true;
+		me.gg3dDistance=500;
+			me.__div = me._ht_click;
+	};
 	function SkinHotspotClass_ht_obra__3d(parentScope,hotspot) {
 		var me=this;
 		var flag=false;
@@ -1191,17 +1690,17 @@ function pano2vrSkin(player,base) {
 		el.name = 'ht_obra';
 		el.userData.x = 0;
 		el.userData.y = 0;
-		el.translateZ(0.000);
+		el.translateZ(0.030);
 		el.userData.zIndex = -10000;
 		el.userData.zIndexCurrent = -10000;
-		el.userData.z = 0.000;
+		el.userData.z = 0.030;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.mouseOverTouchMode = 'clicky';
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
-		el.renderOrder = 0;
-		el.userData.renderOrder = 0;
+		el.renderOrder = 1;
+		el.userData.renderOrder = 1;
 		el.userData.isVisible = function() {
 			let vis = me._ht_obra.visible
 			let parentEl = me._ht_obra.parent;
@@ -3754,13 +4253,21 @@ function pano2vrSkin(player,base) {
 			}
 			hotspotTemplates['SkinHotspotClass_ht_pdf'].push(hsinst);
 		} else
-		{
+			if (hotspot.skinid=='ht_obra') {
 			hotspot.skinid = 'ht_obra';
 			hsinst = new SkinHotspotClass_ht_obra(me, hotspot);
 			if (!hotspotTemplates.hasOwnProperty('SkinHotspotClass_ht_obra')) {
 				hotspotTemplates['SkinHotspotClass_ht_obra'] = [];
 			}
 			hotspotTemplates['SkinHotspotClass_ht_obra'].push(hsinst);
+		} else
+		{
+			hotspot.skinid = 'ht_click';
+			hsinst = new SkinHotspotClass_ht_click(me, hotspot);
+			if (!hotspotTemplates.hasOwnProperty('SkinHotspotClass_ht_click')) {
+				hotspotTemplates['SkinHotspotClass_ht_click'] = [];
+			}
+			hotspotTemplates['SkinHotspotClass_ht_click'].push(hsinst);
 		}
 		return hsinst;
 	}
@@ -3796,13 +4303,21 @@ function pano2vrSkin(player,base) {
 			}
 			hotspotTemplates['SkinHotspotClass_ht_pdf__3d'].push(hsinst);
 		} else
-		{
+			if (hotspot.skinid=='ht_obra') {
 			hotspot.skinid = 'ht_obra';
 			hsinst = new SkinHotspotClass_ht_obra__3d(me, hotspot);
 			if (!hotspotTemplates.hasOwnProperty('SkinHotspotClass_ht_obra__3d')) {
 				hotspotTemplates['SkinHotspotClass_ht_obra__3d'] = [];
 			}
 			hotspotTemplates['SkinHotspotClass_ht_obra__3d'].push(hsinst);
+		} else
+		{
+			hotspot.skinid = 'ht_click';
+			hsinst = new SkinHotspotClass_ht_click__3d(me, hotspot);
+			if (!hotspotTemplates.hasOwnProperty('SkinHotspotClass_ht_click__3d')) {
+				hotspotTemplates['SkinHotspotClass_ht_click__3d'] = [];
+			}
+			hotspotTemplates['SkinHotspotClass_ht_click__3d'].push(hsinst);
 		}
 		return (hsinst ? hsinst.__obj : null);
 	}
